@@ -13,18 +13,18 @@ public class Exercicio5 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		double nota1,nota2,nota3,media;
+		float nota1,nota2,nota3,media;
 		
 		System.out.println("Digite a primeira nota: ");
-		nota1 = ler.nextDouble();
+		nota1 = ler.nextFloat();
 		System.out.println("Digite a primeira nota: ");
-		nota2 = ler.nextDouble();
+		nota2 = ler.nextFloat();
 		System.out.println("Digite a primeira nota: ");
-		nota3 = ler.nextDouble();
+		nota3 = ler.nextFloat();
 		
 		media = ((nota1*2) + (nota2*3) + (nota3*5))/10;
 
-		System.out.println("\nA média ponderada do aluno é: "+media);
+		System.out.printf("\nA média ponderada do aluno é: %.2f",media);
 	}
 
 }
