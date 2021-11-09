@@ -14,16 +14,19 @@ public class Exercicio4 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		double n;
+		int n;
+		double resultado;
 		
 		System.out.println("Digite um número qualquer: ");
-		n = ler.nextDouble();
+		n = ler.nextInt();
 		
 		if(n%2==0) {
-			System.out.println("Número Par | Raiz Quadrada: "+ Math.sqrt(n));
+			resultado = Math.sqrt(n);
+			System.out.println("Número Par | Raiz Quadrada: "+ resultado);
 		}
 		else {
-			System.out.println("Número Ímpar | Elevado ao quadrado: "+ Math.pow(n, 2));
+			resultado = Math.pow(n, 2);
+			System.out.println("Número Ímpar | Elevado ao quadrado: "+ resultado);
 		}
 
 	}

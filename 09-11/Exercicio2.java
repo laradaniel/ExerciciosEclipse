@@ -19,24 +19,24 @@ public class Exercicio2 {
 		System.out.println("Digite o terceiro número: ");
 		c = ler.nextFloat();
 		
-		if(a>b && a>c) {
-			if(c>b) {
+		if(a>=b && a>=c) {
+			if(c>=b) {
 				System.out.println(b+" "+c+" "+a);
 			}
 			else {
 				System.out.println(c+" "+b+" "+a);
 			}	
 		}
-		else if(b>a && b>c) {
-			if(c>a) {
+		else if(b>=a && b>=c) {
+			if(c>=a) {
 				System.out.println(a+" "+c+" "+b);
 			}
 			else {
 				System.out.println(c+" "+a+" "+b);
 			}
 		}
-		else if(c>b && c>a) {
-			if(a>b) {
+		else if(c>=b && c>=a) {
+			if(a>=b) {
 				System.out.println(b+" "+a+" "+c);
 			}
 			else {
