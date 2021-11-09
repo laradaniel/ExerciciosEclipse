@@ -13,7 +13,8 @@ public class Exercicio5 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		float nota1,nota2,nota3,media;
+		float nota1,nota2,nota3;
+		double media;
 		
 		System.out.println("Digite a primeira nota: ");
 		nota1 = ler.nextFloat();
