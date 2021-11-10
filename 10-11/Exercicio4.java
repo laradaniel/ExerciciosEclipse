@@ -17,16 +17,30 @@ public class Exercicio4 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		int idade, calma=0,mn=0,p,genero,x=0,ha=0,oc=0,pn40=0,pc18=0;
+		int idade, calma=0,mn=0,p,genero,x=1,ha=0,oc=0,pn40=0,pc18=0;
 	
 		
-		while(x!=10) {
+		while(x<=10) {
 			System.out.println("Digite sua idade: ");
 			idade = ler.nextInt();
-			System.out.println("\n\tGenero\n[1] Feminino \n[2] Masculino \n[3]Outros");
+			while(idade<=0 || idade>=120) {
+				System.out.println("Digite sua idade: ");
+				idade = ler.nextInt();
+			}
+			
+			System.out.println("\nGenero\n[1]Feminino \n[2]Masculino \n[3]Outros");
 			genero = ler.nextInt();
-			System.out.println("\n\tPersonalidade \n[1]Calma \n[2]Nervosa \n[3]Agressiva");
+			while(genero<1 || genero>3) {
+				System.out.println("\nGenero\n[1]Feminino \n[2]Masculino \n[3]Outros");
+				genero = ler.nextInt();
+			}
+			
+			System.out.println("\nPersonalidade \n[1]Calme \n[2]Nervose \n[3]Agressive");
 			p = ler.nextInt();
+			while(p<1 || p>3) {
+				System.out.println("\nPersonalidade \n[1]Calme \n[2]Nervose \n[3]Agressive");
+				p = ler.nextInt();
+			}
 			
 			if(p==1) {
 				calma++;
