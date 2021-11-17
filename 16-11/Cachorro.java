@@ -17,5 +17,9 @@ public class Cachorro extends Animal {
 	public void setCorrer(String correr) {
 		this.correr = correr;
 	}
+	
+	public String getSom() {
+		return("O cachorro late: "+super.getSom()); 
+	}
 
 }

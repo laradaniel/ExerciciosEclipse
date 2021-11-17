@@ -17,5 +17,9 @@ public class Cavalo extends Animal {
 	public void setCorrer(String correr) {
 		this.correr = correr;
 	}
+	
+	public String getSom() {
+		return("O cavalo relincha: "+super.getSom()); 
+	}
 
 }

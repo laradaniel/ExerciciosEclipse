@@ -17,5 +17,8 @@ public class Preguica extends Animal {
 	public void setSubir(String subir) {
 		this.subir = subir;
 	}
-			
+	
+	public String getSom() {
+		return("A preguiça emite um som: "+super.getSom()); 
+	}
 }
